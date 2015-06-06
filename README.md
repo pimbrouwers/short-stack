@@ -23,7 +23,7 @@ short-stack/src/
 
 Using Short Stack is very straight forward. Simply add the class "short-stack" to any table and you're done.
 
-### Example:
+### Example ([JS Fiddle](http://jsfiddle.net/pimbrouwers/fm6csrxn/)):
 
 ```html
 <table class="short-stack">
