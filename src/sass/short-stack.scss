@@ -1,0 +1,38 @@
+$break-point: 600px;
+$spacing: 20px;
+$border-color: #ddd;
+
+
+.short-stack {
+    @media screen and (max-width: $break-point) {
+        
+        & thead {
+            display: none;
+        }
+
+        & tr {
+            margin-bottom: $spacing;
+            display: block;
+            border-left: 1px solid $border-color;
+            border-top: 1px solid $border-color;
+            border-right: 1px solid $border-color;
+            border-bottom: 2px solid $border-color;
+        }
+
+        & td {
+            display: block;
+            text-align: right;
+        }
+
+        & td:last-child {
+            border-bottom: 0;
+        }
+
+        & td:before {
+            content: attr(data-label);
+            float: left;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+    }
+}
